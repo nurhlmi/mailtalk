@@ -7,7 +7,7 @@ import CustomAccordion from '../components/CustomAccordion';
 
 export default function Home() {
   return (
-    <Page title="Food Delivery .Within Building. Group Chat.">
+    <Page title="Anonym Messaging. Open Chat. Thematic Discussion.">
       <Navbar />
       <Stack
         id="home"
@@ -21,9 +21,12 @@ export default function Home() {
         <Container>
           <Grid container alignItems="center" justifyContent="center" pt={15} pb={10}>
             <Grid item xs={12} md={6} textAlign={{ xs: 'center', md: 'left' }} order={{ xs: 2, md: 1 }}>
-              <Typography variant="h2">Food Delivery.</Typography>
-              <Typography variant="h2">Within Building.*</Typography>
-              <Typography variant="h2">Group Chat.</Typography>
+              <Typography variant="h2">Anonym Messaging</Typography>
+              <Typography variant="h2">Open Chat</Typography>
+              <Typography variant="h2">
+                Thematic Discussion <br />
+                <small>for Your Community *)</small>
+              </Typography>
               <Stack direction="row" justifyContent={{ xs: 'center', md: 'left' }} spacing={2} mt={5}>
                 <Link
                   href="https://play.google.com/store/apps/details?id=com.gojek.app&hl=id"
@@ -37,46 +40,42 @@ export default function Home() {
                 </Link> */}
               </Stack>
               <Typography variant="body2" mt={5}>
-                * Baru melayani gedung The Tower - by Alam Sutera, Jakarta.
+                *) Invited group only. Sementara, hanya untuk domain email yang terundang.
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={8} md={6} order={{ xs: 1, md: 2 }}>
-              <img
-                src="https://mockuuups-web.ams3.cdn.digitaloceanspaces.com/web/images/header-iphone-mockups-2.png"
-                alt="Download on the App Store"
-                width="100%"
-              />
+            <Grid item align="center" xs={12} sm={8} md={6} order={{ xs: 1, md: 2 }}>
+              <img src="/static/mockups/portrait.png" alt="Download on the App Store" width="50%" />
             </Grid>
           </Grid>
         </Container>
       </Stack>
       <Container sx={{ pt: 12 }} id="feature">
         <Typography variant="h3" align="center" gutterBottom>
-          Memudahkan Warga Perkantoran
+          Build Community You Desire
         </Typography>
         <Typography color="text.secondary" align="center">
-          Berikut beberapa kemudahan yang bisa kamu dapatkan:
+          That is fun, friendly, inclusive, open, creative, and innovative
         </Typography>
         <Grid container spacing={3} mt={0}>
           <Grid item xs={12} md={4}>
             <CustomCard
-              src="/static/illustrations/delivery.svg"
-              title="Kirim ke Mejamu"
-              description="Kamu hanya duduk manis, kurir kami akan mengirim pesanan langsung ke mejamu dengan cepat."
+              src="/static/illustrations/texting.svg"
+              title="Anonym Messaging"
+              description="Fitur ini memudahkan anggota organisasi di berbagai level untuk mendapatkan informasi yang lebih faktual, tidak bias, sekaligus aman bagi pemberi informasi."
             />
           </Grid>
           <Grid item xs={12} md={4}>
             <CustomCard
-              src="/static/illustrations/order.svg"
-              title="Jual/Beli Sekaligus"
-              description="Kamu dapat menjual dan membeli makanan atau minuman dengan pengguna lainnya dalam satu langkah."
+              src="/static/illustrations/messaging.svg"
+              title="Open Chat"
+              description="Fitur ini memudahkan anggota organisasi di berbagai level untuk mengirimkan atau mendapatkan informasi secara sangat cepat. Cocok untuk informasi semacam 'breaking news'"
             />
           </Grid>
           <Grid item xs={12} md={4}>
             <CustomCard
               src="/static/illustrations/feed.svg"
-              title="Group Chat"
-              description="Kamu dapat berkomunikasi dengan penjual atau pembeli lainnya dalam satu ruang percakapan yang terpusat."
+              title="Thematic Discussion"
+              description="Fitur ini menjembatani ide-ide kreatif dari anggota komunitas/organisasi tanpa batas-batas geografi dan hirarki jabatan. Ini untuk membuka peluang-peluang baru bagi organisasi dan anggotanya."
             />
           </Grid>
         </Grid>
@@ -85,13 +84,13 @@ export default function Home() {
         <Grid container alignItems="center" spacing={3} mb={3}>
           <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
             <Typography variant="h3" gutterBottom>
-              Order 1 Klik
+              Re-Color Your Identity
             </Typography>
             <Typography color="text.secondary">
-              Fitur ini memungkinkan pengguna untuk memesan makanan dari restoran atau penjual makanan yang terdaftar
-              dalam aplikasi. Pengguna dapat menjelajahi menu, memilih makanan yang diinginkan, menambahkannya ke
-              keranjang belanja, dan memproses pembayaran melalui aplikasi. Setelah itu, pesanan akan dikirim ke
-              restoran atau penjual makanan untuk diproses dan diantar ke lokasi pengguna.
+              Bangun reputasi kamu dengan mengisi profil secara lengkap, serta memilih warna tulisan yang cocok dengan
+              kepribadian kamu. Warna ini akan menjadi ciri khas kamu dan menjadi penguat karakter kamu dalam
+              berinteraksi dengan pengguna lain. Warna pilihanmu akan terlihat pada setiap obrolan (kecuali di fitur
+              anonym messaging).
             </Typography>
           </Grid>
           <Grid item xs={12} sm={8} md={6} order={{ xs: 1, md: 2 }}>
@@ -100,30 +99,28 @@ export default function Home() {
         </Grid>
         <Grid container alignItems="center" spacing={3} mb={3}>
           <Grid item xs={12} sm={8} md={6}>
-            <img src="/static/illustrations/wallet.svg" alt="Order" width="100%" />
+            <img src="/static/illustrations/customization.svg" alt="Order" width="100%" />
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography variant="h3" gutterBottom>
-              Bayar Masih Manual
+              Edit & Delete your Post
             </Typography>
             <Typography color="text.secondary">
-              Fitur ini memungkinkan pemilik restoran atau penjual makanan untuk memasarkan dan menjual produk makanan
-              mereka melalui aplikasi. Mereka dapat membuat profil bisnis, mengunggah menu makanan, mengatur harga,
-              mengelola persediaan, dan menerima pesanan dari pelanggan. Fitur ini memberikan platform bagi pemilik
-              bisnis makanan untuk memperluas jangkauan mereka dan meningkatkan penjualan.
+              Hampir di semua bagian (kecuali anonym messaging), postingan kamu bisa diciptakan secara bebas karena bisa
+              diedit dan dihapus sesering yang kamu mau. Ini memudahkan kamu untuk senantiasa memperbaiki akurasi
+              informasi.
             </Typography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" spacing={3} mb={3}>
           <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
             <Typography variant="h3" gutterBottom>
-              Group Chat per Topik
+              Reply Privately: Anonymously or Openly
             </Typography>
             <Typography color="text.secondary">
-              Fitur ini memungkinkan pengguna untuk berpartisipasi dalam percakapan yang terfokus pada topik tertentu
-              yang berkaitan dengan makanan. Misalnya, topik seperti "Resep dan Masakan Rumahan," "Restoran Terbaik di
-              Kota," atau "Makanan Sehat dan Gizi." Pengguna dapat bergabung dengan talks yang menarik bagi mereka,
-              mengajukan pertanyaan, memberikan saran, atau berbagi pengetahuan mereka.
+              Setiap postingan orang lain dapat dibalas secara privat, baik secara terbuka maupun anonim. Ini memudahkan
+              kamu untuk berkomunikasi secara lebih pas berdasarakn konteksnya. Ada hal-hal yang tidak bisa direspon
+              secara terbuka, namun justru perlu direspon secara privat, atau bahkan secara anonim.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={8} md={6} order={{ xs: 1, md: 2 }}>
@@ -144,7 +141,7 @@ export default function Home() {
         >
           <CardContent sx={{ px: { xs: 1, md: 2 } }}>
             <Typography variant="h3" textAlign={{ xs: 'center', md: 'left' }}>
-              Download aplikasi CeploX sekarang!
+              Download aplikasi MailTalk sekarang!
             </Typography>
             <Stack direction="row" justifyContent={{ xs: 'center', md: 'left' }} spacing={{ xs: 1, md: 2 }} mt={2}>
               <Link

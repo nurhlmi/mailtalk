@@ -11,11 +11,11 @@ export default function Footer() {
           <Grid item xs={12} md={3}>
             <Logo white />
             <Typography variant="body2" mt={2.2}>
-              Food Delivery.
+              Anonym Messaging.
               <br />
-              Within Building.
+              Open Chat.
               <br />
-              Group Chat.
+              Thematic Discussion.
             </Typography>
           </Grid>
           <Grid item xs={6} sm={4} md={3}>
