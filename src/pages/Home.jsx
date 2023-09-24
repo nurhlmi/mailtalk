@@ -28,14 +28,10 @@ export default function Home() {
                 <small>for Your Community *)</small>
               </Typography>
               <Stack direction="row" justifyContent={{ xs: 'center', md: 'left' }} spacing={2} mt={5}>
-                <Link
-                  href="https://play.google.com/store/apps/details?id=com.gojek.app&hl=id"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <Link href={import.meta.env.VITE_PLAYSTORE} target="_blank" rel="noreferrer">
                   <img src="/static/badges/GooglePlay.svg" alt="Download di Google Play" width={150} />
                 </Link>
-                {/* <Link href="https://apps.apple.com/id/app/gojek/id944875099?l=id" target="_blank" rel="noreferrer">
+                {/* <Link href={import.meta.env.VITE_APPSTORE} target="_blank" rel="noreferrer">
                   <img src="/static/badges/AppStore.svg" alt="Download di Google Play" width={150} />
                 </Link> */}
               </Stack>
@@ -144,14 +140,10 @@ export default function Home() {
               Download aplikasi MailTalk sekarang!
             </Typography>
             <Stack direction="row" justifyContent={{ xs: 'center', md: 'left' }} spacing={{ xs: 1, md: 2 }} mt={2}>
-              <Link
-                href="https://play.google.com/store/apps/details?id=com.gojek.app&hl=id"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <Link href={import.meta.env.VITE_PLAYSTORE} target="_blank" rel="noreferrer">
                 <img src="/static/badges/GooglePlay.svg" alt="Download di Google Play" width={150} />
               </Link>
-              {/* <Link href="https://apps.apple.com/id/app/gojek/id944875099?l=id" target="_blank" rel="noreferrer">
+              {/* <Link href={import.meta.env.VITE_APPSTORE} target="_blank" rel="noreferrer">
                 <img src="/static/badges/AppStore.svg" alt="Download di Google Play" width={150} />
               </Link> */}
             </Stack>

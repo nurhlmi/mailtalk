@@ -29,7 +29,13 @@ export default function Footer() {
               <Link component={RouterLink} to="" color="inherit" underline="none">
                 FAQ
               </Link>
-              <Link component={RouterLink} to="" color="inherit" underline="none">
+              <Link
+                href={import.meta.env.VITE_PLAYSTORE}
+                color="inherit"
+                underline="none"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Download
               </Link>
             </Stack>
