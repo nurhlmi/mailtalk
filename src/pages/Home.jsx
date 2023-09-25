@@ -21,11 +21,14 @@ export default function Home() {
         <Container>
           <Grid container alignItems="center" justifyContent="center" pt={15} pb={10}>
             <Grid item xs={12} md={6} textAlign={{ xs: 'center', md: 'left' }} order={{ xs: 2, md: 1 }}>
+              <Typography variant="h2" mb={4}>
+                FREE
+              </Typography>
               <Typography variant="h2">Anonym Messaging.</Typography>
               <Typography variant="h2">Open Chat.</Typography>
-              <Typography variant="h2">
-                Thematic Discussion. <br />
-                <small>for Your Community *)</small>
+              <Typography variant="h2">Thematic Discussion.</Typography>
+              <Typography variant="h4" mt={3}>
+                for Your Office/Community *)
               </Typography>
               <Stack direction="row" justifyContent={{ xs: 'center', md: 'left' }} spacing={2} mt={5}>
                 <Link href={import.meta.env.VITE_PLAYSTORE} target="_blank" rel="noreferrer">
