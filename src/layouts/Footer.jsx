@@ -52,11 +52,14 @@ export default function Footer() {
           </Grid>
           <Grid item xs={6} sm={4} md={3}>
             <Stack spacing={1}>
-              <Link component={RouterLink} to="privacy-policy" color="inherit" underline="none">
+              <Link component={RouterLink} to="/privacy-policy" color="inherit" underline="none">
                 Kebijakan Privasi
               </Link>
-              <Link component={RouterLink} to="terms-condition" color="inherit" underline="none">
+              <Link component={RouterLink} to="/terms-condition" color="inherit" underline="none">
                 Syarat & Ketentuan
+              </Link>
+              <Link component={RouterLink} to="/account-deletion" color="inherit" underline="none">
+                Penghapusan Akun
               </Link>
               {/* <Tooltip title="Instagram">
                 <IconButton>
